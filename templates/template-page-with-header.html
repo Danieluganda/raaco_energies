@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="js no-mobile no-touch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Generator" content="Custom Static Site">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+    <!-- Dynamic Meta Tags -->
+    <meta name="description" content="{{PAGE_DESCRIPTION}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    
+    <!-- Page Title -->
+    <title>{{PAGE_TITLE}} | Outbox Africa</title>
+    
+    <!-- External CSS Files -->
+    <link rel="stylesheet" media="all" href="assets/css/css_4oey91qG5HlFawcc2bhiFRQE0JuteqK36Go-bSbXSEc.css">
+    <link rel="stylesheet" media="all" href="assets/css/css_-aYrtcO2mjD56XEcIKOh6unxzWkC92xLS2tz7sAGWzs.css">
+    <link rel="stylesheet" media="all" href="assets/css/css_IfMO4jK8xA7YFlhIDLp9a4hxYksblockhu2T6qOqFZM.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" media="all" href="assets/css/custom-styles.css">
+    <link rel="stylesheet" media="all" href="assets/css/enhancements.css">
+    <link rel="stylesheet" media="all" href="assets/css/fonts.css">
+    <link rel="stylesheet" media="all" href="assets/css/qtip-themes.css">
+    
+    <!-- CSS Variables -->
+    <style>
+        :root {
+            --color--primary-hue: 202;
+            --color--primary-saturation: 79%;
+            --color--primary-lightness: 50%;
+        }
+    </style>
+</head>
+
+<body class="{{BODY_CLASSES}}" data-hasqtip="0">
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+        Skip to main content
+    </a>
+    
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+        <!-- Page Wrap -->
+        <div class="page" id="top">
+            
+            <!-- Navigation Panel -->
+            <nav class="main-nav sticky js-no-transparent-white {{NAV_CLASSES}}">
+                <div class="container">
+                    <div class="main-nav-sub">
+                        <div id="block-otbx-site-branding">
+                            <div class="nav-logo-wrap local-scroll">
+                                <a class="logo {{LOGO_CLASSES}}" href="{{HOME_URL}}" rel="home">
+                                    <img src="{{LOGO_SRC}}" alt="Home" fetchpriority="high">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Menu Button -->
+                        <div class="mobile-nav" role="button" tabindex="0" aria-expanded="false">
+                            <i class="mobile-nav-icon"></i>
+                            <span class="visually-hidden">Menu</span>
+                        </div>
+
+                        <!-- Main Menu -->
+                        <div class="inner-nav desktop-nav" style="display: flex;">
+                            {{NAVIGATION_MENU}}
+                        </div>
+                        <!-- End Main Menu -->
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navigation Panel -->
+
+            <!-- Main Content -->
+            <main role="main" id="main">
+                
+                <!-- Page Header Section -->
+                {{#if PAGE_HEADER_ENABLED}}
+                <section class="pt-0 pb-0 page-header-style {{PAGE_HEADER_ALIGNMENT}}">
+                    {{#if HEADER_IMAGE}}
+                    <div class="header-image" style="background-image: url('{{HEADER_IMAGE}}');"></div>
+                    {{/if}}
+                    
+                    <div class="container title-content position-relative pt-50 pt-sm-0 pb-20">
+                        {{#if PAGE_TITLE_BLOCK}}
+                        <div id="block-otbx-page-title" class="block block-core block-page-title-block">
+                            <h1 class="hs-title-1">
+                                <span class="visually-hidden user-select-none">
+                                    <span>{{PAGE_TITLE_TEXT}}</span>
+                                </span>
+                                <span class="wow charsAnimIn words chars splitting animated" data-splitting="chars" aria-hidden="true">
+                                    {{PAGE_TITLE_TEXT}}
+                                </span>
+                            </h1>
+                        </div>
+                        {{/if}}
+                        
+                        {{#if PAGE_SUMMARY}}
+                        <div class="page-summary">
+                            {{PAGE_SUMMARY}}
+                        </div>
+                        {{/if}}
+                    </div>
+                </section>
+                {{/if}}
+                
+                <!-- Content Messages -->
+                <div>
+                    <div data-drupal-messages-fallback="" class="hidden messages-list"></div>
+                    <div id="block-otbx-content">
+                        
+                        <!-- Article Content -->
+                        <article data-history-node-id="{{NODE_ID}}" class="mt-10">
+                            <div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="column col-md-12 main">
+                                            {{CONTENT_BEFORE_SECTIONS}}
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Layout Sections -->
+                                <div class="layout layout--onecol">
+                                    <div class="layout__region layout__region--content">
+                                        {{MAIN_CONTENT_SECTIONS}}
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                
+            </main>
+            
+            <!-- Footer Placeholder -->
+            <div id="footer-placeholder">
+                <!-- Footer will be dynamically loaded here -->
+            </div>
+            
+        </div>
+        <!-- End Page Wrap -->
+    </div>
+
+    <!-- Application Configuration -->
+    <script type="application/json" id="drupal-settings-json">
+        {
+            "path": {
+                "baseUrl": "/",
+                "pathPrefix": "",
+                "currentPath": "{{CURRENT_PATH}}",
+                "currentPathIsAdmin": false,
+                "isFront": {{IS_FRONT}},
+                "currentLanguage": "en"
+            },
+            "pluralDelimiter": "\u0003",
+            "suppressDeprecationErrors": true,
+            "user": {
+                "uid": 0,
+                "permissionsHash": "c6091b72fee46a6e97dbc24857ddd7cbba6cd94774c2280f8ae28ea9945ce3e7"
+            }
+        }
+    </script>
+    
+    <!-- Dynamic Component Loader -->
+    <script>
+        // Load footer dynamically
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.log('Footer not loaded:', error));
+    </script>
+    
+    <!-- Core JavaScript -->
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/external-scripts.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+{
+  "templateSystem": {
+    "version": "1.0",
+    "created": "2024-12-27",
+    "description": "Template configuration for Outbox Africa website",
+    "baseUrl": "/",
+    "logoDefault": "https://via.placeholder.com/200x60/003366/FFFFFF?text=OUTBOX+AFRICA",
+    "faviconPath": "assets/images/favicon.ico"
+  },
+  
+  "pageTypes": {
+    "homepage": {
+      "template": "template-homepage.html",
+      "bodyClasses": "path-frontpage page-node-type-page appear-animate js-focus-visible",
+      "isFront": true,
+      "defaultMeta": {
+        "description": "Outbox Africa - Empowering African entrepreneurs through innovation and impact",
+        "canonicalUrl": "/"
+      }
+    },
+    
+    "contentPage": {
+      "template": "template-page-with-header.html", 
+      "bodyClasses": "page-node-type-page",
+      "isFront": false,
+      "headerEnabled": true,
+      "headerAlignment": "text-only-center-alignment"
+    },
+    
+    "detailPage": {
+      "template": "template-page-with-header.html",
+      "bodyClasses": "page-node-type-page",
+      "isFront": false,
+      "headerEnabled": true,
+      "headerAlignment": "text-only-left-alignment",
+      "navClasses": "small-height body-scrolled",
+      "logoClasses": "small-height"
+    },
+    
+    "storyPage": {
+      "template": "template-page-with-header.html",
+      "bodyClasses": "page-node-type-page",
+      "isFront": false,
+      "headerEnabled": true,
+      "headerAlignment": "text-only-center-alignment"
+    }
+  },
+  
+  "commonPlaceholders": {
+    "site": {
+      "HOME_URL": "/",
+      "LOGO_SRC": "https://via.placeholder.com/200x60/003366/FFFFFF?text=OUTBOX+AFRICA",
+      "NAVIGATION_MENU": "<!-- Navigation items dynamically loaded -->",
+      "CURRENT_PATH": "node/1",
+      "NODE_ID": "1"
+    },
+    
+    "styles": {
+      "primaryColor": "#003366",
+      "secondaryColor": "#FFFAEB", 
+      "accentColor": "#007ACC",
+      "textColor": "#333333"
+    }
+  },
+  
+  "sectionTemplates": {
+    "hero": {
+      "classes": "paragraph--type--hero-banner bg-primary-gradients",
+      "structure": "image-text-cta"
+    },
+    
+    "singleColumn": {
+      "classes": "paragraph--type--single-column-text-box py-5",
+      "structure": "title-content"
+    },
+    
+    "multipleBoxes": {
+      "classes": "paragraph pt-80 pb-80 paragraph--type--multiple-resizable-text-boxes",
+      "structure": "title-grid"
+    },
+    
+    "iconBoxes": {
+      "classes": "paragraph pt-50 pb-50 paragraph--type--icon-text-boxes textbox-style-1",
+      "structure": "title-icon-grid"
+    },
+    
+    "cardGrid": {
+      "classes": "paragraph pt-80 pb-80",
+      "structure": "title-card-grid"
+    },
+    
+    "imageText": {
+      "classes": "paragraph pt-80 pb-80",
+      "structure": "image-text-side-by-side"
+    },
+    
+    "callToAction": {
+      "classes": "paragraph--type--cta py-5",
+      "structure": "title-content-buttons"
+    }
+  },
+  
+  "examplePages": {
+    "impactStories": {
+      "pageTitle": "Impact Stories",
+      "pageDescription": "Discover inspiring entrepreneurial journeys and success stories from Outbox Africa entrepreneurs",
+      "canonicalUrl": "/impact-stories",
+      "headerImage": "",
+      "pageTitleText": "Impact Stories",
+      "pageSummary": "Embark on a journey of positive change through our diverse entrepreneurial stories, impact opportunities, invaluable resources, and endless inspiration.",
+      "currentPath": "impact-stories",
+      "nodeId": "15",
+      "contentStructure": [
+        {
+          "type": "singleColumn",
+          "title": "Stories of impact and innovation",
+          "content": "Discover the journeys of African entrepreneurs..."
+        },
+        {
+          "type": "cardGrid", 
+          "title": "",
+          "cards": "dynamically loaded from CMS"
+        }
+      ]
+    },
+    
+    "storyDetail": {
+      "pageTitle": "Story Detail",
+      "pageDescription": "Read the full story of innovation and entrepreneurship",
+      "headerAlignment": "text-only-left-alignment",
+      "navClasses": "small-height body-scrolled",
+      "logoClasses": "small-height",
+      "contentStructure": [
+        {
+          "type": "singleColumn",
+          "content": "Full article content..."
+        }
+      ]
+    },
+    
+    "ourStory": {
+      "pageTitle": "Our Story", 
+      "pageDescription": "Learn about Outbox Africa's mission, vision, and impact",
+      "canonicalUrl": "/our-story",
+      "headerAlignment": "text-on-top-of-background-image-dark",
+      "headerImage": "/path/to/header-image.jpg",
+      "contentStructure": [
+        {
+          "type": "iconBoxes",
+          "title": "Our Values",
+          "boxes": [
+            {
+              "icon": "fas fa-lightbulb",
+              "title": "Innovation",
+              "content": "Description..."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  
+  "placeholderImages": {
+    "logo": "https://via.placeholder.com/200x60/003366/FFFFFF?text=OUTBOX+AFRICA",
+    "heroBanner": "https://via.placeholder.com/1200x600/003366/FFFFFF?text=HERO+BANNER",
+    "profileLarge": "https://via.placeholder.com/300x300/666666/FFFFFF?text=PROFILE",
+    "profileSmall": "https://via.placeholder.com/100x100/666666/FFFFFF?text=PROFILE",
+    "contentImage": "https://via.placeholder.com/600x400/999999/FFFFFF?text=CONTENT+IMAGE",
+    "thumbnail": "https://via.placeholder.com/200x150/CCCCCC/333333?text=THUMBNAIL"
+  },
+  
+  "cssFramework": {
+    "bootstrap": {
+      "version": "5.x",
+      "gridSystem": true,
+      "utilities": true
+    },
+    "customStyles": [
+      "assets/css/custom-styles.css",
+      "assets/css/enhancements.css", 
+      "assets/css/fonts.css",
+      "assets/css/qtip-themes.css"
+    ]
+  },
+  
+  "javascript": {
+    "coreFiles": [
+      "assets/js/components.js",
+      "assets/js/external-scripts.js", 
+      "assets/js/app.js"
+    ],
+    "dynamicLoading": {
+      "footer": "components/footer.html"
+    }
+  }
+}

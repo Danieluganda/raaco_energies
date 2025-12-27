@@ -1,0 +1,185 @@
+/* qTip Tooltip Styles - Extracted from inline styles */
+.qtip.pht-fcbnhmal-qtip {
+    margin: 0 !important;
+    width: auto !important;
+    opacity: 1 !important;
+    max-width: 700px !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+}
+
+.qtip.pht-fcbnhmal-qtip > div:not(.qtip-titlebar) {
+    margin: 0 !important;
+    width: auto !important;
+}
+
+.qtip.pht-fcbnhmal-qtip > div > div {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content,
+.qtip.pht-fcbnhmal-qtip .qtip-content > * {
+    background-color: transparent !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content {
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 5px 9px !important;
+    box-sizing: border-box;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-family: "Times New Roman" !important;
+    font-size: 17px !important;
+    line-height: 19px !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content p,
+.qtip.pht-fcbnhmal-qtip .qtip-content ul,
+.qtip.pht-fcbnhmal-qtip .qtip-content ol,
+.qtip.pht-fcbnhmal-qtip .qtip-content li,
+.qtip.pht-fcbnhmal-qtip .qtip-content h3,
+.qtip.pht-fcbnhmal-qtip .qtip-content code,
+.qtip.pht-fcbnhmal-qtip .qtip-content pre,
+.qtip.pht-fcbnhmal-qtip .qtip-content blockquote,
+.qtip.pht-fcbnhmal-qtip .qtip-content strong,
+.qtip.pht-fcbnhmal-qtip .qtip-content em,
+.qtip.pht-fcbnhmal-qtip .qtip-content i,
+.qtip.pht-fcbnhmal-qtip .qtip-content b,
+.qtip.pht-fcbnhmal-qtip .qtip-content u {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    color: inherit !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content h3 {
+    font-size: 1.17em !important;
+    font-weight: bold !important;
+    margin: 0.5em 0 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content strong,
+.qtip.pht-fcbnhmal-qtip .qtip-content b {
+    font-weight: bold !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content em,
+.qtip.pht-fcbnhmal-qtip .qtip-content i {
+    font-style: italic !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content u {
+    text-decoration: underline !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content code {
+    font-family: monospace !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content ul,
+.qtip.pht-fcbnhmal-qtip .qtip-content ol {
+    padding-inline-start: 40px !important;
+}
+
+.qtip.pht-fcbnhmal-qtip .qtip-content li {
+    display: list-item !important;
+}
+
+/* qTip Theme Variations */
+.qtip.pht-fcbnhmal-qtip.qtip-light {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E2E2 !important;
+    color: #454545 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-light .qtip-titlebar {
+    background-color: #f1f1f1 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-light .qtip-icon {
+    border-color: #CCC !important;
+    background: #F1F1F1 !important;
+    color: #777 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark {
+    background-color: #505050 !important;
+    border: 1px solid #303030 !important;
+    color: #f3f3f3 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark .qtip-titlebar {
+    background-color: #404040 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark .qtip-content * {
+    color: #f3f3f3 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark .qtip-content em {
+    color: #ccc !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark .qtip-content span {
+    color: #f3f3f3 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark .qtip-content strong {
+    color: white !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-dark .qtip-icon {
+    border-color: #444 !important;
+    background: #505050 !important;
+    color: #f3f3f3 !important;
+}
+
+/* Additional theme variations (cream, red, green, blue, etc.) */
+.qtip.pht-fcbnhmal-qtip.qtip-cream {
+    background-color: #FBF7AA !important;
+    border: 1px solid #F9E98E !important;
+    color: #A27D35 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-cream .qtip-titlebar {
+    background-color: #F0DE7D !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-cream .qtip-icon {
+    border-color: #F9E98E !important;
+    background: #F0DE7D !important;
+    color: #A27D35 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-red {
+    background-color: #F78B83 !important;
+    border: 1px solid #D95252 !important;
+    color: #912323 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-red .qtip-titlebar {
+    background-color: #F06D65 !important;
+}
+
+.qtip.pht-fcbnhmal-qtip.qtip-red .qtip-icon {
+    border-color: #D95252 !important;
+    background: #F06D65 !important;
+    color: #912323 !important;
+}
+
+/* Typewriter effect */
+.typewrite > .wrap:after {
+    content: '|';
+}

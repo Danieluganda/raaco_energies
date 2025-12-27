@@ -1,0 +1,176 @@
+<!-- Navigation Panel -->
+<style>
+/* Header Navigation Styles */
+.site-header__inner__container {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+.site-header__inner__container .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-logo-wrap .logo img {
+    height: 60px;
+    width: auto;
+}
+
+.mobile-buttons {
+    display: none;
+}
+
+.mobile-buttons .primary-nav__button-toggle {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-icon::before,
+.mobile-nav-icon::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-icon::before {
+    top: -8px;
+}
+
+.mobile-nav-icon::after {
+    top: 8px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.primary-nav__menu--level-1 {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.primary-nav__menu-item {
+    position: relative;
+}
+
+.primary-nav__menu-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.primary-nav__menu-link:hover,
+.primary-nav__menu-link:focus {
+    background-color: #f8f9fa;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .mobile-buttons {
+        display: block;
+    }
+    
+    .header-nav {
+        display: none;
+        flex-basis: 100%;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+    
+    .header-nav.active {
+        display: block;
+    }
+    
+    .primary-nav__menu--level-1 {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .primary-nav__menu-link {
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .site-header__inner__container .container {
+        flex-wrap: wrap;
+    }
+}
+</style>
+<nav class="site-header__inner__container">
+    <div class="container">
+        <div id="block-otbx-site-branding">
+            <div class="nav-logo-wrap local-scroll">
+                <a class="logo" href="index.html" rel="home">
+                    <img src="https://via.placeholder.com/200x60/003366/FFFFFF?text=OUTBOX+AFRICA" alt="Home" fetchpriority="high">
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-buttons">
+            <button class="primary-nav__button-toggle" role="button" tabindex="0" aria-expanded="false">
+                <i class="mobile-nav-icon"></i>
+                <span class="visually-hidden">Menu</span>
+            </button>
+        </div>
+
+        <!-- Main Menu -->
+        <div class="header-nav">
+            <ul class="primary-nav__menu--level-1">
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="index.html" class="primary-nav__menu-link">Home</a>
+                </li>
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="our-story.html" class="primary-nav__menu-link">Our Story</a>
+                </li>
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="services.html" class="primary-nav__menu-link">Services</a>
+                </li>
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="Impact Stories.html" class="primary-nav__menu-link">Impact Stories</a>
+                </li>
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="project_A.html" class="primary-nav__menu-link">Projects</a>
+                </li>
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="programs.html" class="primary-nav__menu-link">Programs</a>
+                </li>
+                <li class="primary-nav__menu-item primary-nav__menu-item--level-1">
+                    <a href="contact.html" class="primary-nav__menu-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Main Menu -->
+    </div>
+</nav>
+<!-- End Navigation Panel -->

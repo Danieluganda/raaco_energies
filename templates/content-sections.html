@@ -1,0 +1,280 @@
+<!-- Hero Section Template -->
+<section class="paragraph--type--hero-banner bg-primary-gradients {{HERO_CLASSES}}" style="{{HERO_STYLES}}">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content text-white">
+                    {{#if HERO_SUBTITLE}}
+                    <p class="hero-subtitle mb-3">{{HERO_SUBTITLE}}</p>
+                    {{/if}}
+                    
+                    <h1 class="hero-title display-3 fw-bold mb-4">
+                        {{HERO_TITLE}}
+                    </h1>
+                    
+                    {{#if HERO_DESCRIPTION}}
+                    <p class="hero-description lead mb-4">
+                        {{HERO_DESCRIPTION}}
+                    </p>
+                    {{/if}}
+                    
+                    {{#if HERO_CTA_BUTTON}}
+                    <div class="hero-actions">
+                        <a href="{{HERO_CTA_URL}}" class="btn btn-light btn-lg">
+                            {{HERO_CTA_TEXT}}
+                        </a>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            
+            {{#if HERO_IMAGE}}
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <img src="{{HERO_IMAGE}}" alt="{{HERO_IMAGE_ALT}}" class="img-fluid">
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</section>
+
+<!-- Single Column Text Section Template -->
+<section class="paragraph--type--single-column-text-box py-5 {{SECTION_CLASSES}}" style="{{SECTION_STYLES}}">
+    <div class="container">
+        <div class="row">
+            <div class="{{COLUMN_CLASSES}}">
+                {{#if SECTION_TITLE}}
+                <h2 class="section-title mb-4">{{SECTION_TITLE}}</h2>
+                {{/if}}
+                
+                <div class="text-content clearfix">
+                    {{SECTION_CONTENT}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Multiple Resizable Text Boxes Template -->
+<section class="paragraph pt-80 pb-80 paragraph--type--multiple-resizable-text-boxes {{SECTION_CLASSES}}" style="{{SECTION_STYLES}}">
+    <div class="container">
+        {{#if SECTION_TITLE}}
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">{{SECTION_TITLE}}</h2>
+            </div>
+        </div>
+        {{/if}}
+        
+        <div class="row">
+            {{#each TEXT_BOXES}}
+            <div class="{{this.COLUMN_CLASSES}}">
+                <div class="text-box mb-4">
+                    {{#if this.TITLE}}
+                    <h3 class="text-box-title mb-3">{{this.TITLE}}</h3>
+                    {{/if}}
+                    
+                    <div class="text-box-content">
+                        {{this.CONTENT}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Icon Text Boxes Template -->
+<section class="paragraph pt-50 pb-50 paragraph--type--icon-text-boxes textbox-style-1 {{SECTION_CLASSES}}" style="{{SECTION_STYLES}}">
+    <div class="container position-relative">
+        {{#if SECTION_TITLE}}
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">{{SECTION_TITLE}}</h2>
+            </div>
+        </div>
+        {{/if}}
+        
+        <div class="row">
+            {{#each ICON_BOXES}}
+            <div class="{{this.COLUMN_CLASSES}}">
+                <div class="icon-box text-center mb-4">
+                    {{#if this.ICON}}
+                    <div class="icon-box-icon mb-3">
+                        <i class="{{this.ICON}}" style="font-size: 3rem; color: {{this.ICON_COLOR}};"></i>
+                    </div>
+                    {{/if}}
+                    
+                    {{#if this.TITLE}}
+                    <h3 class="icon-box-title mb-3">{{this.TITLE}}</h3>
+                    {{/if}}
+                    
+                    {{#if this.CONTENT}}
+                    <div class="icon-box-content">
+                        {{this.CONTENT}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Card Grid Template -->
+<section class="paragraph pt-80 pb-80 {{SECTION_CLASSES}}" style="{{SECTION_STYLES}}">
+    <div class="container">
+        {{#if SECTION_TITLE}}
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">{{SECTION_TITLE}}</h2>
+                {{#if SECTION_SUBTITLE}}
+                <p class="section-subtitle">{{SECTION_SUBTITLE}}</p>
+                {{/if}}
+            </div>
+        </div>
+        {{/if}}
+        
+        <div class="row {{CARDS_GRID_CLASSES}}">
+            {{#each CARDS}}
+            <div class="{{this.COLUMN_CLASSES}}">
+                <div class="card h-100 mb-4">
+                    {{#if this.IMAGE}}
+                    <div class="card-image">
+                        <img src="{{this.IMAGE}}" alt="{{this.IMAGE_ALT}}" class="card-img-top">
+                    </div>
+                    {{/if}}
+                    
+                    <div class="card-body">
+                        {{#if this.TITLE}}
+                        <h3 class="card-title">{{this.TITLE}}</h3>
+                        {{/if}}
+                        
+                        {{#if this.CONTENT}}
+                        <div class="card-text">
+                            {{this.CONTENT}}
+                        </div>
+                        {{/if}}
+                        
+                        {{#if this.CTA_LINK}}
+                        <div class="card-actions mt-auto">
+                            <a href="{{this.CTA_LINK}}" class="btn {{this.CTA_CLASSES}}">
+                                {{this.CTA_TEXT}}
+                            </a>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- Image with Text Template -->
+<section class="paragraph pt-80 pb-80 {{SECTION_CLASSES}}" style="{{SECTION_STYLES}}">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="{{IMAGE_COLUMN_CLASSES}}">
+                <div class="image-content">
+                    <img src="{{SECTION_IMAGE}}" alt="{{SECTION_IMAGE_ALT}}" class="img-fluid rounded">
+                </div>
+            </div>
+            
+            <div class="{{TEXT_COLUMN_CLASSES}}">
+                <div class="text-content">
+                    {{#if SECTION_SUBTITLE}}
+                    <p class="section-subtitle text-primary mb-2">{{SECTION_SUBTITLE}}</p>
+                    {{/if}}
+                    
+                    {{#if SECTION_TITLE}}
+                    <h2 class="section-title mb-4">{{SECTION_TITLE}}</h2>
+                    {{/if}}
+                    
+                    <div class="section-content">
+                        {{SECTION_CONTENT}}
+                    </div>
+                    
+                    {{#if SECTION_CTA}}
+                    <div class="section-actions mt-4">
+                        <a href="{{SECTION_CTA_URL}}" class="btn {{SECTION_CTA_CLASSES}}">
+                            {{SECTION_CTA_TEXT}}
+                        </a>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Views/Listing Template -->
+<div class="views-element-container {{VIEWS_CLASSES}}">
+    <div class="row mb-40 {{VIEWS_ROW_CLASSES}}">
+        {{#each VIEWS_ITEMS}}
+        <div class="{{this.COLUMN_CLASSES}}">
+            <div class="view-item mb-4">
+                {{#if this.IMAGE}}
+                <div class="view-item-image mb-3">
+                    <img src="{{this.IMAGE}}" alt="{{this.IMAGE_ALT}}" class="img-fluid">
+                </div>
+                {{/if}}
+                
+                <div class="view-item-content">
+                    {{#if this.TITLE}}
+                    <h3 class="view-item-title mb-2">
+                        {{#if this.LINK}}
+                        <a href="{{this.LINK}}" class="text-decoration-none">{{this.TITLE}}</a>
+                        {{else}}
+                        {{this.TITLE}}
+                        {{/if}}
+                    </h3>
+                    {{/if}}
+                    
+                    {{#if this.CONTENT}}
+                    <div class="view-item-text">
+                        {{this.CONTENT}}
+                    </div>
+                    {{/if}}
+                    
+                    {{#if this.META}}
+                    <div class="view-item-meta mt-2">
+                        {{this.META}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<!-- Call to Action Section Template -->
+<section class="paragraph--type--cta py-5 {{CTA_CLASSES}}" style="{{CTA_STYLES}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                {{#if CTA_TITLE}}
+                <h2 class="cta-title mb-4">{{CTA_TITLE}}</h2>
+                {{/if}}
+                
+                {{#if CTA_CONTENT}}
+                <div class="cta-content mb-4">
+                    {{CTA_CONTENT}}
+                </div>
+                {{/if}}
+                
+                {{#if CTA_BUTTONS}}
+                <div class="cta-actions">
+                    {{#each CTA_BUTTONS}}
+                    <a href="{{this.URL}}" class="btn {{this.CLASSES}} me-2">
+                        {{this.TEXT}}
+                    </a>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</section>
