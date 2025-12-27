@@ -34,6 +34,16 @@ const OutboxApp = {
         window.addEventListener('load', () => {
             document.body.classList.add('loaded');
         });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.primary-nav__button-toggle');
+        const headerNav = document.querySelector('.header-nav');
+        if (menuToggle && headerNav) {
+            menuToggle.addEventListener('click', function () {
+                const isActive = headerNav.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+            });
+        }
         
         // Window resize event
         let resizeTimeout;
