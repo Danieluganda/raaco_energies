@@ -19,6 +19,7 @@
     <link rel="stylesheet" media="all" href="assets/css/custom-styles.css">
     <link rel="stylesheet" media="all" href="assets/css/enhancements.css">
     <link rel="stylesheet" media="all" href="assets/css/qtip-themes.css">
+    <script src="assets/js/footer-year.js" defer></script>
     <noscript>
         <link rel="stylesheet" href="assets/css/navigation/nav-primary-no-js.css" />
     </noscript>
@@ -87,22 +88,13 @@
                                                                                 Unlocking Uganda's Mineral Wealth for Sustainable Growth and Prosperity.
                                                                             </h2>
                                                                             <div class="mt-20 pt-20 d-flex hero-select">
-                                                                                <select name="forma"
-                                                                                    onchange="location = this.value;">
-                                                                                    <option value="/">What would you
-                                                                                        like to do?</option>
-                                                                                    <option value="/join-us">Join the
-                                                                                        Community of fellow
-                                                                                        entrepreneurs</option>
-                                                                                    <option value="/programs">Build my
-                                                                                        skills</option>
-                                                                                    <option value="/our-services">Build
-                                                                                        my own business</option>
-                                                                                    <option value="/programs">Invest in
-                                                                                        a business</option>
-                                                                                    <option value="/partnerships">
-                                                                                        Partner to prepare youth for
-                                                                                        business</option>
+                                                                                <select name="forma" onchange="if(this.value !== '#') location = this.value;">
+                                                                                    <option value="#">How can we help you?</option>
+                                                                                    <option value="#">Explore Innovation Projects</option>
+                                                                                    <option value="#">Join Our Community</option>
+                                                                                    <option value="#">Find a Mentor</option>
+                                                                                    <option value="#">See Upcoming Events</option>
+                                                                                    <option value="#">Collaborate With Us</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
